@@ -1,0 +1,5 @@
+{
+  "name": "Tattoo Preview System",
+  "description": "A web application to preview tattoo designs on user photos using React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
