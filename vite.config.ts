@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // 关键配置：GitHub Pages 的仓库名称
-  // 如果您的仓库名是 maplexian-app，这里的 base 必须是 '/maplexian-app/'
-  base: '/maplexian-app/',
+  base: '/maplexian-app/', // 必须改成你的仓库名,前后都要有斜杠
   build: {
     outDir: 'dist', // 输出目录，默认为 dist
     assetsDir: 'assets', // 静态资源目录
@@ -16,4 +14,4 @@ export default defineConfig({
     port: 3000,
     open: true
   }
-});
+})
